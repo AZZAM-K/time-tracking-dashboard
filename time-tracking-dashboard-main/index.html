@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="person">
+        <div class="report">
+          <img src="images/image-jeremy.png" />
+          <div class="name">
+            <p>Report for</p>
+            <p>Jeremy Robson</p>
+          </div>
+        </div>
+        <div class="timeframes">
+          <a href="#" onclick="getHours('daily', 0,'Day')">Daily</a>
+          <a href="#" onclick="getHours('weekly', 1,'Week')">Weekly</a>
+          <a href="#" onclick="getHours('monthly', 2,'Month')">Monthly</a>
+        </div>
+      </div>
+      <div class="card work">
+        <div class="times">
+          <div class="activity">
+            <span>Work</span>
+            <img src="images/icon-ellipsis.svg" />
+          </div>
+          <div class="hours" id="work-hours"></div>
+        </div>
+      </div>
+      <div class="card play">
+        <div class="times">
+          <div class="activity">
+            <span>Play</span>
+            <img src="images/icon-ellipsis.svg" />
+          </div>
+          <div class="hours" id="play-hours"></div>
+        </div>
+      </div>
+      <div class="card study">
+        <div class="times">
+          <div class="activity">
+            <span>Study</span>
+            <img src="images/icon-ellipsis.svg" />
+          </div>
+          <div class="hours" id="study-hours"></div>
+        </div>
+      </div>
+      <div class="card exercise">
+        <div class="times">
+          <div class="activity">
+            <span>Exercise</span>
+            <img src="images/icon-ellipsis.svg" />
+          </div>
+          <div class="hours" id="exercise-hours"></div>
+        </div>
+      </div>
+      <div class="card social">
+        <div class="times">
+          <div class="activity">
+            <span>Social</span>
+            <img src="images/icon-ellipsis.svg" />
+          </div>
+          <div class="hours" id="social-hours"></div>
+        </div>
+      </div>
+      <div class="card self-care">
+        <div class="times">
+          <div class="activity">
+            <span>Self Care</span>
+            <img src="images/icon-ellipsis.svg" />
+          </div>
+          <div class="hours" id="selfcare-hours"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
